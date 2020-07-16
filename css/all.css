@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+}
+
+.wrap{
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.a-box{
+    display: flex;
+    text-decoration: none;
+}
+
+.a-box img{
+    padding-right: 2px;
+}
+
+.menu-box{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #f6f6f6;
+    padding: 8px 18px;
+}
+
+.menu-box li{
+    padding-left: 15px; 
+}
+
+.fb-color{
+    color: #4460a0;
+}
+
+.twitter-color{
+    color: #00aaec;
+}
+
+.nav-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px #d1d1d1;
+}
+
+.nav-area h1{
+    padding-left: 10px;
+}
+
+.nav-box{
+    display: flex;
+    align-items: center;
+}
+
+.nav-box li a{
+    text-decoration: none;
+    color: #00cc99;
+    display: block;
+    padding:20px 10px 18px 10px;
+    width: 100px;
+    border-bottom: 3px solid #00cc99;
+    border-color: rgba(0, 0, 0, 0);
+    transition: .2s;
+    text-align: center;
+}
+
+.nav-box li a:hover{
+    border-bottom: 3px solid #00cc99;
+}
+
+.c-area{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 26px;
+}
+
+.c-box{
+    text-align: center;
+    box-shadow: 0 3px 4px #d1d1d1;
+    padding: 20px;
+    width: 33.3333%;
+    margin-bottom: 1%;
+}
+
+.c-box h2{
+    font-weight: bold;
+    margin-top: 16px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.c-box p{
+    line-height: 20px;
+    text-align: justify;
+}
+
+.c-box ul li{
+    list-style: inside;
+    text-align: left;
+}
+
+.c-jquery-p{
+    text-align: left;
+}
+
+.c-box ul li,.c-jquery-p{
+    line-height: 20px;
+}
+
+@media (max-width:767px){
+    
+    .a-box{
+        font-size: 18px;
+    }
+    .nav-area{
+        flex-direction: column;
+    }
+
+    .nav-area h1{
+        padding: 10px 0 10px 0;
+    }
+
+    .nav-box{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .nav-box li{
+        width: 50%;
+    }
+    .nav-box li a{
+        width: 100%;
+        font-size: 20px;
+    }
+    .c-area{
+        flex-direction: column;
+        margin: 16px;
+    }
+    .c-box{
+        width: 100%;
+        margin-bottom: 2%;
+    }
+
+    .c-box h2{
+        font-size: 24px;
+    }
+
+    .c-box p{
+        font-size: 20px;
+        line-height: 33px;
+    }
+
+    .c-box ul li{
+        font-size: 20px;
+        line-height: 33px;
+    }
+}
